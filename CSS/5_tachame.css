@@ -1,0 +1,11 @@
+div p span{
+    text-decoration:line-through;
+}
+
+.normal{
+    background-color: bisque;
+}
+
+.tachado {
+    background-color: red;
+}
