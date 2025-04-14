@@ -1,0 +1,17 @@
+body{
+    background-color: RGB(25, 50, 100);
+}
+div p, h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    font-size: 50px;
+    text-align: center;
+}
+
+div h6{
+    font-weight: bold;
+}
+
+div p {
+    font-weight: normal;
+}
