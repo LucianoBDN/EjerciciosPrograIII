@@ -102,3 +102,49 @@ function promediarEdad(){
 }
 
     console.log(promediarEdad());
+
+
+function promedioEdadMasculino(){
+    const sumaEdades = usuarios.reduce(function(total, usuario, contador){
+        if(usuario.sexo === "Male"){
+            return total + usuario.edad;
+        }else{
+            return total;
+        }
+    },0);
+
+    const masculinos = usuarios.filter(function (usuario) {
+        return usuario.sexo === "Male" ;
+    });
+
+    const promedioEdades = sumaEdades / masculinos.length;
+
+    return promedioEdades;
+}
+
+console.log(promedioEdadMasculino())
+
+
+function promedioEdadEgipcios(){
+    const sumaEdades = usuarios.reduce(function(total, usuario){
+        if(usuario.pais === "Egypt"){
+            return total + usuario.edad;
+            co
+        }else{
+            return total;
+        }
+    },0);
+
+    console.log(sumaEdades)
+
+    const egipcios = usuarios.filter(function (usuario) {
+        return usuario.pais == "Egypt" ;
+    });
+
+    const promedioEdades = sumaEdades / egipcios.length;
+
+    console.log(egipcios)
+    return promedioEdades;
+}
+
+console.log(promedioEdadEgipcios())
