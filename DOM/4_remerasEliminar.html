@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="4_estilo.css">
+</head>
+
+<body>
+    <div id="formulario-remera">
+        <input type="button" id="guardarRemera" value="Guardar Storage" onclick="guardarLocalStorage()">
+    </div>
+    <div id="formulario-remera">
+        <form id="form-remeras">
+            <input type="text" id="slogan" placeholder="Slogan de la remera" required="Obligatorio">
+            <input type="text" id="size" placeholder="Talle" required>
+            <input type="text" id="price" placeholder="Precio" required>
+            <input type="text" id="color" placeholder="Color" required>
+
+            <input type="text" id="manufacturerName" placeholder="Nombre del fabricante" required>
+            <input type="text" id="manufacturerCountry" placeholder="País del fabricante" required>
+            <input type="text" id="manufacturerCity" placeholder="Ciudad del fabricante" required>
+            <input type="button" id="guardarRemera" value="Guardar Remera" onclick="agregarRemera()">
+        </form>
+    </div>
+    <div>
+         <input type="button" id="guardarRemera" value="Eliminar Remera" onclick="eliminarRemera()">
+    </div>
+    <h2>Lista de remeras</h2>
+
+    <!-- <input type="button" value="Recuperar remeras" onclick="recuperarRemeras()"> -->
+    <input type="button" value="Mostrar remeras" onclick="mostrarTabla()">
+
+    <div id="tabla-container"></div>
+
+    <script src="4_remerasEliminar.js"></script>
+</body>
+
+</html>
